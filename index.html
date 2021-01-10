@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgf798Vi6n6V21cJtSWAdbtobHdDt1n4Q&libraries=places&callback=initMap">
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Radar</title>
+</head>
+
+<body class="flex-container">
+
+    <div id="home" class="title">
+        <h1>Radar</h1>
+    </div>
+
+    <div id = "selection" class="selection">
+        <h3>Enter your location</h3>
+        <input id="input" placeholder="Enter location" type="text" />
+        <h3>Choose type of location</h3>
+        <select id="placeType">
+            <option value="Cafés">Cafés</option>
+            <option value="Parking">Parking</option>
+            <option value="Shopping Malls">Shopping Malls</option>
+            <option value="ATM">ATM</option>
+            <option value="Toilets">Toilet</option>
+        </select>
+        <h3>Enter maximum radius (m)</h3>
+        <input type="number" id="Distance">
+        <input type="submit" id="submit" value="Locate">
+    </div>
+
+    <div id="map"></div>
+
+</body>

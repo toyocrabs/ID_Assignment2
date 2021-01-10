@@ -1,0 +1,79 @@
+body{
+    background-color: #2D2926FF;
+    scroll-behavior: smooth;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.title{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+}
+
+.title h1{
+    padding: 0%;
+    letter-spacing: 10px;
+    font-size: 80px;
+    font-family: 'Bebas Neue';
+}
+
+.selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2D2926FF;
+    color: white;
+    font-family: 'JetBrains Mono';
+}
+
+#input{
+    width: 40%;
+}
+
+#placeType{
+    width: 40%;
+}
+
+#Distance{
+    width: 40%;
+}
+
+#submit{
+    font-size: 20px;
+    padding: 0.5%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    
+}
+
+#autocomplete{
+    height: 20px;
+    width: 80%
+}
+
+#map {
+    width: 80%;
+    height: 500px;
+    align-self: center;
+    border: 2px solid black;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+@media (min-width: 534px){
+    #map{
+        height: 700px;
+    }
+}
